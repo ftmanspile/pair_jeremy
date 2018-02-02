@@ -1,11 +1,18 @@
+Player One
+<br>
 <%= fname %>
 <br>
 <%= lname %>
 <br>
 <%= gname %>
+<br>
 
 <form method="post" action="/player_two">
   First name: <input type="text" name="fname2"><br>
+  <input type="text" name="fname" value=<%= fname %> hidden>
   Last name: <input type="text" name="lname2"><br>
+  <input type="text" name="lname" value=<%= lname %> hidden>
+  Favorite Game: <input type="text" name="gname2"><br>
+  <input type="text" name="gname" value=<%= gname %> hidden>
   <input type="submit" value="Submit">
 </form>
